@@ -1,6 +1,6 @@
 apiVersion: v1
 entries:
-  wordpress-helm:
+  wordpress:
   - annotations:
       category: CMS
       images: |
@@ -13,7 +13,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.4.3
-    created: "2024-04-04T16:50:56.87258287-04:00"
+    created: "2024-04-04T16:59:34.342966487-04:00"
     dependencies:
     - condition: memcached.enabled
       name: memcached
@@ -29,7 +29,7 @@ entries:
       - bitnami-common
       version: 2.x.x
     description: A Helm chart for Kubernetes
-    digest: 74c7309e2fdbb83a2b71558e1dc59c67df70cb5199795fcb719f1ae65d024542
+    digest: 40dcce828c30d5a7b3a113be21f83ee5d905f2b6a30a0bfc772d140f19ea26d4
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
     keywords:
@@ -43,11 +43,11 @@ entries:
     maintainers:
     - name: VMware, Inc.
       url: https://github.com/bitnami/charts
-    name: wordpress-helm
+    name: wordpress
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
     type: application
     urls:
-    - https://ussnorma.github.io/helm/wordpress-helm-20.1.2.tgz
+    - https://ussnorma.github.io/helm/wordpress-20.1.2.tgz
     version: 20.1.2
-generated: "2024-04-04T16:50:56.852938008-04:00"
+generated: "2024-04-04T16:59:34.323846188-04:00"
