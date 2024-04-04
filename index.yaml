@@ -1,0 +1,53 @@
+apiVersion: v1
+entries:
+  wordpress-helm:
+  - annotations:
+      category: CMS
+      images: |
+        - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.6-debian-12-r8
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r16
+        - name: wordpress
+          image: docker.io/bitnami/wordpress:6.4.3-debian-12-r20
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 6.4.3
+    created: "2024-04-04T16:13:18.644854612-04:00"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: A Helm chart for Kubernetes
+    digest: 521b4ff2546d9bede05c4543c5cdbbb0f59aa3f9ca5e89dd6f258bb00ce40026
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: wordpress-helm
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
+    type: application
+    urls:
+    - https://ussnorma.github.io/helm/wordpress-helm-20.1.2.tgz
+    version: 20.1.2
+generated: "2024-04-04T16:13:18.626648832-04:00"
