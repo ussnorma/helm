@@ -13,7 +13,56 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.4.3
-    created: "2024-04-05T11:21:06.831614884-04:00"
+    created: "2024-04-05T13:20:04.43405494-04:00"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: A Helm chart for Kubernetes
+    digest: 3a1c3d83b2315f33991184619aacaec93f3a16fe8b4b495bae2b14cf3f0214af
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
+    type: application
+    urls:
+    - https://ussnorma.github.io/helm/wordpress-20.1.5.tgz
+    version: 20.1.5
+  - annotations:
+      category: CMS
+      images: |
+        - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.6-debian-12-r8
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r16
+        - name: wordpress
+          image: docker.io/bitnami/wordpress:6.4.3-debian-12-r20
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 6.4.3
+    created: "2024-04-05T13:20:04.415616014-04:00"
     dependencies:
     - condition: memcached.enabled
       name: memcached
@@ -62,7 +111,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.4.3
-    created: "2024-04-05T11:21:06.816870314-04:00"
+    created: "2024-04-05T13:20:04.394924455-04:00"
     dependencies:
     - condition: memcached.enabled
       name: memcached
@@ -111,7 +160,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.4.3
-    created: "2024-04-05T11:21:06.799234346-04:00"
+    created: "2024-04-05T13:20:04.373539428-04:00"
     dependencies:
     - condition: memcached.enabled
       name: memcached
@@ -148,4 +197,4 @@ entries:
     urls:
     - https://ussnorma.github.io/helm/wordpress-20.1.2.tgz
     version: 20.1.2
-generated: "2024-04-05T11:21:06.783004836-04:00"
+generated: "2024-04-05T13:20:04.356310194-04:00"
