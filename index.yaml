@@ -13,7 +13,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.4.3
-    created: "2024-04-06T14:58:51.890874953-04:00"
+    created: "2024-04-06T15:22:00.610069639-04:00"
     dependencies:
     - condition: memcached.enabled
       name: memcached
@@ -29,7 +29,7 @@ entries:
       - bitnami-common
       version: 2.x.x
     description: A Helm chart for Kubernetes
-    digest: eb1526e89c1b0600f0ea6f265d931f0ac848c52441f871c440b121e6935a01d9
+    digest: c7adff952ed7affa91563e9c046ba8fd545ed3af7b8b57461b04d7b316b415e8
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
     keywords:
@@ -50,53 +50,4 @@ entries:
     urls:
     - https://ussnorma.github.io/helm/wordpress-20.1.8.tgz
     version: 20.1.8
-  - annotations:
-      category: CMS
-      images: |
-        - name: apache-exporter
-          image: docker.io/bitnami/apache-exporter:1.0.6-debian-12-r8
-        - name: os-shell
-          image: docker.io/bitnami/os-shell:12-debian-12-r16
-        - name: wordpress
-          image: docker.io/bitnami/wordpress:6.4.3-debian-12-r20
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 6.4.3
-    created: "2024-04-06T14:58:51.87544819-04:00"
-    dependencies:
-    - condition: memcached.enabled
-      name: memcached
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 6.x.x
-    - condition: mariadb.enabled
-      name: mariadb
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 16.x.x
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: A Helm chart for Kubernetes
-    digest: 00a7d03d66028401ed328f91b85270ee72b72851885c1de6d556f894c8cad012
-    home: https://bitnami.com
-    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
-    keywords:
-    - application
-    - blog
-    - cms
-    - http
-    - php
-    - web
-    - wordpress
-    maintainers:
-    - name: VMware, Inc.
-      url: https://github.com/bitnami/charts
-    name: wordpress
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
-    type: application
-    urls:
-    - https://ussnorma.github.io/helm/wordpress-20.1.7.tgz
-    version: 20.1.7
-generated: "2024-04-06T14:58:51.856460023-04:00"
+generated: "2024-04-06T15:22:00.589802682-04:00"
