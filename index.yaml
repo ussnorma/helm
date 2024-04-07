@@ -13,7 +13,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.4.3
-    created: "2024-04-07T08:38:33.152197162-04:00"
+    created: "2024-04-07T16:03:09.337997541-04:00"
     dependencies:
     - condition: memcached.enabled
       name: memcached
@@ -29,7 +29,7 @@ entries:
       - bitnami-common
       version: 2.x.x
     description: A Helm chart for Kubernetes
-    digest: d05d5006176bd0aa086a7b13a8ec205fe5e1da5c5da9ca38f10c93fabf22a623
+    digest: 48a1a1349c0900cdb2be329b93aa630aa3438cf27c5de6d0807a943533cfd91d
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
     keywords:
@@ -48,6 +48,6 @@ entries:
     - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
     type: application
     urls:
-    - https://ussnorma.github.io/helm/wordpress-20.1.12.tgz
-    version: 20.1.12
-generated: "2024-04-07T08:38:33.13288258-04:00"
+    - https://ussnorma.github.io/helm/wordpress-20.1.13.tgz
+    version: 20.1.13
+generated: "2024-04-07T16:03:09.316288756-04:00"
